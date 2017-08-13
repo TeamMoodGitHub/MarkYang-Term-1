@@ -1,0 +1,31 @@
+Adding Images:
+    Add images usings <img> element, and point to specific image's URL using <src> attribute. Example:
+        <img src ="https://www.your-image-source.com/your-image.jpg" alt ="lorem ipsum text">
+    All <img> elements MUST have an <alt> attribute. The text inside an <alt> attribute is used for screen readers to improve accessibility and is displayed if images failed to load.
+
+Sizing images:
+    CSS property <width> controls element's width. Use <px>(pixels) to specify width. Example:
+        <style>
+            .larger-image {
+                width: 500px;
+            }
+        </style>
+
+Add borders around elements:
+    CSS also have properties like style, <color>, and <width>. Example:
+        <style>
+            .thin-red-border{
+                border-color: red;
+                border-width: 5px;
+                border-style: solid;
+            }
+        </style>
+        <!-- creates a red, 5 px border around an HTML element -->
+
+Using multiple classes for one element:
+    Example:
+        <img class="[class1]" "[class2]" ... src="[link]" alt="[txt]">
+
+Add rounded cornres with a border radius:
+    Rounding out corners CSS property called <border-radius>. Can specify <border-radius> with pixels. This element can be added under <border> class or <image size> class.
+    Instead of using px, <border-radius> can be specified using a percentage. (50% = prefectly circular)

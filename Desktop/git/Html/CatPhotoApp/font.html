@@ -1,0 +1,23 @@
+Change the font size of an element:
+    Font sizes are controlled by font-size CSS porperty like this:
+        h1{
+            font-size: 30px;
+        }
+    The code snippet above will affect all <h1> elements. To make it into a class called "h1", needs to put a period ('.') in fornt of h1 (.h1)
+
+    Same applies for setting font family to an element
+        h2{
+            font-family: Sans-serif;
+        }
+    
+Importing a Google Font:
+    First, need to <call> to Google to grab the font and then load it onto HTML. To import put it on top of code editor:
+       <link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css">
+        <!-- Font Lobster is imported -->
+    
+Specifying how fonts should degrade:
+    Several of default fonts in browsers: <Monospace>, <Serif>, <Sans-Serif>. When one isn't available, it's possible to "degrade" it to another font. For example:
+        p{
+            font-family: Helvetica, Sans-Serif;
+        }
+        <!-- Helvetica will be used if available. Else, Sans-Serif-->

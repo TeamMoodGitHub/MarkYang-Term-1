@@ -1,0 +1,31 @@
+Style the HTML body element
+    Every HTML page has a <body> element. We can prove that the <body> element exists by giving it a <background-color> of black. Ex:
+        <style>
+            body{
+                background-color: black;
+            }
+        </style>
+        <!-- bg color becomes black -->
+
+Inherit styles from the body element
+    Since every HTML page has a <body> element, it can also be styled with CSS. Rmemeber, <body> element can be styled like any other HTML element, and all your other elements will inherit <body> element's styles.
+
+Prioritize One Style Over Another:
+    Sometimes HTML elements will receive multiple styles that conflict with one another. Ex: <h1> cannot be both green and pink at the same time. If a class is declared, the class properties will override body elements
+
+Override styles in subsequent CSS
+    It doesn't matter which order the classes are listed in the HTML element. However, the order of the <class> declarations in the <style> </style> sections are what is important. The second declaration will always take precedence over the first. 
+
+Override class declarations by styling ID attributes:
+    Browsers read CSS from top to bottom. Translation: in event of conflict, browser will use whichever CSS declaration came last. <id> will ALWAYS override <class> attributes in conflicts.
+
+Override class declarations with inline styles:
+    <in-line style> will override <id>. Ex:
+        <h1 id="id" class="class" style="color: blue"></h1>
+
+Override all other styles by using important:
+    In many situations, you will use CSS libraries. These may accidentally override your own CSS. So when you absolutely need to be sure that an element has specific CSS, you use <"!important"> Ex:
+        <style>
+            color: red !important;
+        </style>
+        <!-- makes sure element using the color will be red -->

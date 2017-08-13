@@ -1,0 +1,22 @@
+Create a Bootstrap headline:
+    First - build jQuery playground from scratch
+
+House page within Bootstrap container fluid div
+    Make sure all content on page is mobile-responsive using <container-fluid> class
+
+Create Bootstrap Wells
+    Bootstrap has class called <well> that can create a visual sense of depth for your columns
+
+Create a class to target jQuery selectors
+    Not every class needs to have corresponding CSS. Sometimes we create classes just for the purpose of selecting these elements more easily using jQuery
+
+Target elements by class using jQuery:
+    You see how we made all of <button> elements bounce? We selected them with <$("button")> then we added some CSS classes to them with <.addClass("animated bounce");>. You just used jQuery's <.addClass()> function, which allows you to add classes to elements. First, target <div> elements with the class <well> by using the <$(".well")> selector. Note, just like CSS declarations, you type '.' (period) before the class's name. Then use jQuery's <.addClass()> function to add the clases <animated> and <shake>. For example, you could make all the elements with the class <text-primary> shake by adding the following to your <document ready function>: 
+        $(".text-primary").addClass("animated shake");
+    Example:
+        <script>
+            $(document).ready(function() {
+                $("button").addClass("animated bounce");
+            });
+        </script>
+    
