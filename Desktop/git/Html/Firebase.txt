@@ -1,4 +1,0 @@
-Firebase 
-real time database mgmt system
-connect with app and holds all data 
-ease of access all handeled by servers and stuff
